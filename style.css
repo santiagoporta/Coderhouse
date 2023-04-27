@@ -1,0 +1,159 @@
+/*navbar*/
+.navbarra ul {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  list-style-type: none;
+  list-style-type: decimal;
+}
+.navbarra li {
+  display: inline-block;
+  margin-right: 35px;
+} 
+.navbarra li a {
+  color: rgb(202, 165, 116);
+  text-decoration: none;
+}
+
+.navbarra {
+  background-color: rgb(46, 45, 41);
+  font-size: 25px;
+  margin-bottom: 100px;
+}
+
+/* index */
+.h2-index {
+  text-align: center;
+}
+.carousel {
+  padding-top: 20px;
+  margin: auto;
+}
+
+/* TiendaOnline */
+.productosContenedor {
+  display: flex;
+  justify-content: center;
+}
+.texto-producto {
+  font-size: 25px;
+  font-family: "Pattaya", sans-serif;
+  text-align: center;
+}
+.imagen-producto {
+  height: 300px;
+  padding: 10px;
+}
+
+/* Contactanos */
+.formulario {
+  font-family: "Pattaya", sans-serif;
+  font-size: 35px;
+  padding: 10px;
+  text-align: center;
+}
+.campoformulario {
+  box-sizing: border-box;
+  width: 50%;
+  color: rgb(202, 165, 116);
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
+  background: rgb(46, 45, 41);
+  margin: auto;
+  border-radius: 10px;
+  border: 3px solid rgb(202, 165, 116);
+}
+.campoformulario #btnForm {
+  width: 100px;
+  height: 60px;
+}
+
+
+/* SobreNosotros */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 2fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+  
+  .div1 { grid-area: 1 / 1 / 2 / 3; }
+  .div2 { grid-area: 2 / 1 / 3 / 2; }
+  .div3 { grid-area: 2 / 2 / 3 / 3; }
+  .div1 {
+    font-size: 50px;
+    text-align: center;
+    margin: auto;
+  }
+  .div2 {
+    margin: auto;
+  }
+  .div3 {
+    text-align: center;
+    margin-top: 15px;
+  }
+  .div3info {
+    font-size: 20px;
+    grid-area: 2 / 2 / 3 / 3;
+    margin-top: 60px; 
+    text-align: center;
+    padding: 30px;
+  }
+
+/* DondeEncontrarnos */
+.mapa {
+  display: flex;
+  margin: auto;
+}
+
+ /* footer */
+.iconosRedes {
+  height: 50px;
+  width: 50px;
+  }
+
+/* Media query */
+@media (max-width: 1000px) {
+  .grid-container {
+    box-shadow: none;
+    display: contents;
+    grid-area: "1 / 1 / 2 / 3" "2 / 1 / 3 / 2" "2 / 2 / 3 / 3";
+  }
+}
+
+@media (max-width: 700px) {
+  .navbarra ul {
+    display: contents;
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+    }
+}
+
+@media (max-width: 700px) {
+  .navbarra li a {
+    padding: 5px;
+    background-color: rgb(56, 58, 58);
+    border-radius: 10px;
+  }
+}
+
+
+@media (max-width:500px) {
+  .campoformulario {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    color: rgb(138, 104, 43);
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+    background: rgb(46, 45, 41);
+    margin: auto;
+    border-radius: 10px;
+    border: 3px solid rgb(189, 142, 57);
+  } 
+} 
