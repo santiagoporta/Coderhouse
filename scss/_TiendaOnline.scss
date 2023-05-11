@@ -1,0 +1,13 @@
+.productosContenedor {
+    display: flex;
+    justify-content: center;
+  }
+  .texto-producto {
+    font-size: 50px;
+    font-family: "Pattaya", sans-serif;
+    text-align: center;
+  }
+  .imagen-producto {
+    height: 300px;
+    padding: 10px;
+  }

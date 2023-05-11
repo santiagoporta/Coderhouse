@@ -1,0 +1,5 @@
+@mixin text-style($size, $family, $text-align){
+    font-size: $size;
+    font-family: $family;
+    text-align: $text-align;
+}
