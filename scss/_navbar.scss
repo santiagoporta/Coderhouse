@@ -1,6 +1,7 @@
+@import "variables";
 
 .navbarra {
-    background-color: rgb(46, 45, 41);
+    background-color: $navbar-gris;
     font-size: 25px;
     margin-bottom: 100px;
         ul {
@@ -13,7 +14,7 @@
                 display: inline-block;
                 margin-right: 35px;
                 a {
-                    color: rgb(202, 165, 116);
+                    color: $texto-amarillo;
                     text-decoration: none;
                 }
             }

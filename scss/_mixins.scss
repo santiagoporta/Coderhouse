@@ -1,5 +1,4 @@
-@mixin text-style($size, $family, $text-align){
+@mixin text-style($size, $text-align){
     font-size: $size;
-    font-family: $family;
     text-align: $text-align;
 }

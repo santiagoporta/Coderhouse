@@ -1,13 +1,36 @@
+@import "mixins";
+
 .productosContenedor {
     display: flex;
     justify-content: center;
   }
+
   .texto-producto {
-    font-size: 50px;
+    @include text-style (25px, center);
     font-family: "Pattaya", sans-serif;
-    text-align: center;
+ 
   }
   .imagen-producto {
     height: 300px;
+    width: 100%;
     padding: 10px;
+    transition: all 1s;
   }
+
+  .imagen-producto:hover {
+    transform: scale(1.05);
+    border-radius: 15%;
+  }
+
+  @media (max-width: 1000px){
+    .imagen-producto {
+      border-radius: 15%;
+      height: 150px;
+      width: 100%;
+      object-fit: cover;
+    }
+    .texto-producto {
+      font-size: 17px;
+    }
+  }
+    
