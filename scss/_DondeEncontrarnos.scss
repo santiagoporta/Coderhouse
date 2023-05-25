@@ -4,3 +4,19 @@
     margin: auto;
   }
 
+.buscanos {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 50px;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width: 650px){
+  .mapa {
+    height: 350px;
+    width: 350px;
+  }
+  .buscanos {
+    font-size: 30px;
+  }
+}
